@@ -29,15 +29,6 @@ const CollapsibleCard = ({
 }: CollapsibleCardProps): JSX.Element => {
   const [expanded, setExpanded] = useState(false);
 
-  const getInstance = () => {
-    if (instance === "mini line (good increase)") {
-      return lineGood
-    }
-    if (instance === "mini line (bad increase)") {
-      return lineBad
-    }
-  }
-
   const ExpandButton = styled(Button)(() => ({
     marginLeft: "auto",
   }));
@@ -87,6 +78,15 @@ const CollapsibleCard = ({
     color: "#1C1B1E",
     marginBottom: "8px",
   } as React.CSSProperties;
+
+  const getInstance = () => {
+    if (instance === "mini line (good increase)") {
+      return lineGood
+    }
+    if (instance === "mini line (bad increase)") {
+      return lineBad
+    }
+  }
 
   return (
     <CustomCard sx={{ maxWidth: 273 }}>
