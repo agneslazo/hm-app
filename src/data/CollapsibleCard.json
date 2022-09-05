@@ -1,0 +1,11 @@
+{
+    "observation": "i’m the observation. i could be a 1-liner or 2 liner. truncate if necessary",
+    "title": "I’m the Title, in Title Caps",
+    "value": 10,
+    "instance": "mini line (good increase)",
+    "narratives": [
+        "This is the section where the narrative will be placed. The height is fixed because this card variant is meant to be grouped in threes.",
+        "If the narrative is too long (because after all, this was designed to provide news-like headlines) this section may be used.",
+        "Finally, this is the third paragraph."
+    ]
+}
