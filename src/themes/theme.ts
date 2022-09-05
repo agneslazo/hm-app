@@ -44,13 +44,13 @@ export const appTheme = createTheme({
     background: { paper: "#fff", default: "#fafafa" },
     primary: {
       light: "rgba(247, 253, 249, 1)",
-      main: "rgba(0, 181, 63, 1)",
+      main: "#1C1B1E",
       dark: "rgba(18, 87, 42, 1)",
       contrastText: "#fff",
     },
     secondary: {
       light: "rgba(236, 243, 252, 1)",
-      main: "rgba(2, 20, 52, 1)",
+      main: "#6E7582",
       dark: "rgba(159, 166, 180, 1)",
       contrastText: "rgba(255, 255, 255, 1)",
     },
@@ -59,6 +59,9 @@ export const appTheme = createTheme({
       main: "rgba(186, 27, 27, 1)",
       dark: "rgba(65, 0, 1, 1)",
       contrastText: "#fff",
+    },
+    info: {
+      main: "#00B0F0"
     },
     text: {
       primary: "rgba(2, 20, 52, 1)",

@@ -38,6 +38,7 @@ const CollapsibleCard = ({
     boxShadow: "none",
     padding: "8px 0",
     borderRight: "0.5px solid #C9CBD1",
+    height: "fit-content"
   }));
   
   const CustomCardContent = styled(CardContent)(() => ({
@@ -59,12 +60,7 @@ const CollapsibleCard = ({
   }));
   
   const Title = styled(Typography)(() => ({
-    color: "#6E7582",
     marginTop: "8px",
-  }));
-  
-  const Narrative = styled(Typography)(() => ({
-    color: "#6E7582",
   }));
   
   const observationStyle = {
@@ -75,7 +71,6 @@ const CollapsibleCard = ({
     display: "block",
     // lineClamp: 2,
     // WebkitLineClamp: 2,
-    color: "#1C1B1E",
     marginBottom: "8px",
   } as React.CSSProperties;
 
@@ -98,21 +93,21 @@ const CollapsibleCard = ({
         >
           {observation}
         </Typography>
-        <Title variant="headline6">{title}</Title>
+        <Title variant="headline6" color="secondary" >{title}</Title>
       </CustomCardContent>
       <VizCardContent>
         <Typography variant="displaySmall">{value}</Typography>
         <img src={getInstance()} alt="instance" />
       </VizCardContent>
       <NarrativeCardContent>
-        <Narrative variant="bodyMedium">{narratives[0]}</Narrative>
+        <Typography variant="bodyMedium" color="secondary">{narratives[0]}</Typography>
       </NarrativeCardContent>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         {narratives.map((n, i) => {
           if (i !== 0) {
             return (
               <NarrativeCardContent key={i}>
-                <Narrative variant="bodyMedium">{n}</Narrative>
+                <Typography variant="bodyMedium" color="secondary">{n}</Typography>
               </NarrativeCardContent>
             );
           }
